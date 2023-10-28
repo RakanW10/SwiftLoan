@@ -15,6 +15,10 @@
 		68B095EC2AED0A0500EAF142 /* MainBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B095EB2AED0A0500EAF142 /* MainBackground.swift */; };
 		68B095EE2AED0E4500EAF142 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B095ED2AED0E4500EAF142 /* CustomButton.swift */; };
 		68B095F02AED111900EAF142 /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B095EF2AED111900EAF142 /* AppLogo.swift */; };
+		68B095F32AED19AF00EAF142 /* WelcomeFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B095F22AED19AF00EAF142 /* WelcomeFragment.swift */; };
+		68B095F52AED24F100EAF142 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B095F42AED24F100EAF142 /* UnderlinedTextField.swift */; };
+		68B095F72AED341100EAF142 /* SignInFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B095F62AED341100EAF142 /* SignInFragment.swift */; };
+		68B095F92AED372C00EAF142 /* SignUpFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B095F82AED372C00EAF142 /* SignUpFragment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		68B095EB2AED0A0500EAF142 /* MainBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBackground.swift; sourceTree = "<group>"; };
 		68B095ED2AED0E4500EAF142 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		68B095EF2AED111900EAF142 /* AppLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogo.swift; sourceTree = "<group>"; };
+		68B095F22AED19AF00EAF142 /* WelcomeFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeFragment.swift; sourceTree = "<group>"; };
+		68B095F42AED24F100EAF142 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
+		68B095F62AED341100EAF142 /* SignInFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInFragment.swift; sourceTree = "<group>"; };
+		68B095F82AED372C00EAF142 /* SignUpFragment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFragment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +119,8 @@
 		68B095E42AED03C700EAF142 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				68B095E52AED047200EAF142 /* WelcomeView.swift */,
-				68B095E82AED048F00EAF142 /* WelcomeViewModel.swift */,
+				68B095FA2AED382600EAF142 /* View */,
+				68B095FB2AED383B00EAF142 /* WelcomeViewModel */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -123,8 +131,36 @@
 				68B095EB2AED0A0500EAF142 /* MainBackground.swift */,
 				68B095ED2AED0E4500EAF142 /* CustomButton.swift */,
 				68B095EF2AED111900EAF142 /* AppLogo.swift */,
+				68B095F42AED24F100EAF142 /* UnderlinedTextField.swift */,
 			);
 			path = "Global Compnents";
+			sourceTree = "<group>";
+		};
+		68B095F12AED199200EAF142 /* Fragments */ = {
+			isa = PBXGroup;
+			children = (
+				68B095F22AED19AF00EAF142 /* WelcomeFragment.swift */,
+				68B095F62AED341100EAF142 /* SignInFragment.swift */,
+				68B095F82AED372C00EAF142 /* SignUpFragment.swift */,
+			);
+			path = Fragments;
+			sourceTree = "<group>";
+		};
+		68B095FA2AED382600EAF142 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				68B095F12AED199200EAF142 /* Fragments */,
+				68B095E52AED047200EAF142 /* WelcomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		68B095FB2AED383B00EAF142 /* WelcomeViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				68B095E82AED048F00EAF142 /* WelcomeViewModel.swift */,
+			);
+			path = WelcomeViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,11 +234,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				68B095EC2AED0A0500EAF142 /* MainBackground.swift in Sources */,
+				68B095F32AED19AF00EAF142 /* WelcomeFragment.swift in Sources */,
 				68B095E92AED048F00EAF142 /* WelcomeViewModel.swift in Sources */,
+				68B095F92AED372C00EAF142 /* SignUpFragment.swift in Sources */,
+				68B095F72AED341100EAF142 /* SignInFragment.swift in Sources */,
 				68B095F02AED111900EAF142 /* AppLogo.swift in Sources */,
 				68B095E62AED047200EAF142 /* WelcomeView.swift in Sources */,
 				68B095D32AED02BD00EAF142 /* SwiftLoanApp.swift in Sources */,
 				68B095EE2AED0E4500EAF142 /* CustomButton.swift in Sources */,
+				68B095F52AED24F100EAF142 /* UnderlinedTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
